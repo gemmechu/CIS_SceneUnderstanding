@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            table, th, td{
+      text-align: left;
+    }
+        </style>
+    </head>
+    <body style="text-align: -webkit-center">
+        <div style="text-align: -webkit-left;">
+			<ul>
+                <li class="nav"><a href="https://docs.google.com/presentation/d/1VdBLTTvhxQCVEzTDENCg8JjKUsyKs2rQSJNE_7_dDXY/edit?usp=sharing" target="_blank">Part 0</a></li>
+                <li class="nav"><a href="index.html">Part 1</a></li>
+                <li class="nav"><a href="Part2.html" style="background-color: #27cece;">Part 2</a></li>
+            </ul>
+		</div>
+        </table>
+        <h2 >CIS - Simple Experiment</h2>
+        <div>
+			<ul>
+                <li class="nav"><a href="Part2.html" >Overview</a></li>
+                <li class="nav"><a href="Part2b.html" style="background-color: #33de58;">Experiment</a></li>
+               
+                
+   
+            </ul>
+		</div>
+        <br>
+        <table>
+            <tr>
+                <th>Experiment</th>
+                <th>Steps</th>
+            </tr>
+            <tr>
+                <td>Experiment 0 <br>
+                Get value of theta
+                </td>
+                <td><b>What is the multiplication scalar to get to world scale?</b><br>
+                    1. get the feet location (x,y)<br>
+                    2. get the depth at that location (px)<br>
+                    3. get the height of the person at that location (px)<br>
+                    4. theta = avg_human_height/depth_at_feet  -- avg_human_height = 1.75 meters 
+                </td>
+            </tr>
+            <tr>
+                <td>Experiment 1 <br>
+                Baseline for depth estimation
+                </td>
+                <td><b>How do the predicted model do?</b><br>
+                    1. Calculate Depthmap with MiDas<br>
+                    2. Calculate the loss between the GT and Predicted Depthmap<br>
+                    3. Optimize the GT and Predicted Depthmap with theta<br>
+                    4. Calculate the loss between the optimized GT and Predicted Depthmap
+                </td>
+            </tr>
+            <tr>
+                <td>Experiment 2 <br>
+                Estimating size of other objects(humans)
+                </td>
+                <td><b>Given theta can we estimate size of other objects?</b><br>
+                    1. Get the other humans feet location<br>
+                    2. Calculate their height in meters by multiplying with theta 
+                </td>
+            </tr>
+
+        </table>
+    </body>
+</html>
