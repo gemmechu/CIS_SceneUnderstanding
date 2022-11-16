@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body style="text-align: -webkit-center">
+        <div style="text-align: -webkit-left;">
+			<ul>
+                <li class="nav"><a href="https://docs.google.com/presentation/d/1VdBLTTvhxQCVEzTDENCg8JjKUsyKs2rQSJNE_7_dDXY/edit?usp=sharing" target="_blank">Part 0</a></li>
+                <li class="nav"><a href="index.html">Part 1</a></li>
+                <li class="nav"><a href="part2.html">Part 2</a></li>
+                <li class="nav"><a style="background-color: #27cece;" href="part3.html">part 3</a></li>
+            </ul>
+		</div>
+        </table>
+        <br>
+        <h2 >Metric Accurate Depth using Two Anchors</h2>
+        <br>
+    <table >
+        <h4>Scene 1</h4> <p> Alpha: 0.22 <br>
+            Beta: 0.003</p>
+                <tbody>
+                <tr>
+                <th>
+                    Scene   
+                </th>
+                <th colspan="2">
+                    Diparity
+                </th>
+                <th colspan="2">
+                   Depth 
+                </th>
+            
+                </tr>
+            
+                <tr>
+                
+                    <td>
+                        <img src="data/part3/scene1_img.png" width="400px">
+                    </td>
+            
+                    <td colspan="2">
+                        <img src="data/part3/scene1_disp.png" width="400px">
+                    </td>
+                    <td colspan="2">
+                        <img src="data/part3/scene1_depth.png" width="400px">
+                    </td>
+                        
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                <tr><th>Obj</th><th>Depth</th><th>apprt height</th><th>real height</th><th>Predicted Height</th></tr>
+                <tr> <td>anchor_0</td><td>0.03</td><td>336.0</td><td>10</td><td>10.0</td></tr>
+                <tr> <td>anchor_1</td><td>0.031</td><td>527.0</td><td>16.6</td><td>16.5789</td></tr>
+                <tr> <td>anchor_2</td><td>0.012</td><td>806.0</td><td>10</td><td>10.0</td></tr>
+            
+               
+        </tbody>
+    </table>
+    <br>
+    <table >
+        <h4>Scene 2</h4>
+        <p> Alpha: 0.042807 <br>
+            Beta:  -0.10983</p>
+                <tbody>
+                <tr>
+                <th>
+                    Scene   
+                </th>
+                <th colspan="2">
+                    Diparity
+                </th>
+                <th colspan="2">
+                   Depth 
+                </th>
+                
+                </tr>
+            
+                <tr>
+                
+                    <td>
+                        <img src="data/part3/scene2.png" width="400px">
+                    </td>
+            
+                    <td colspan="2">
+                        <img src="data/part3/scene2_disparity.png" width="400px">
+                    </td>
+                    <td colspan="2">
+                        <img src="data/part3/scene2_depth.png" width="400px">
+                    </td>
+                    
+                        
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                    <tr><th>Obj</th><th>Depth</th><th>apprt height</th><th>real height</th><th>Predicted Height</th></tr>
+                    <tr> <td>anchor_0</td><td>0.124</td><td>109.0</td><td>16.6</td><td>13.502</td></tr>
+                    <tr> <td>anchor_1</td><td>0.087</td><td>115.017</td><td>10</td><td>10.0</td></tr>
+                    <tr> <td>anchor_2</td><td>0.064</td><td>157.003</td><td>10</td><td>10.0</td></tr>
+                    <tr> <td>anchor_3</td><td>0.103</td><td>241.074</td><td>28.3</td><td>24.894</td></tr>
+            
+               
+        </tbody>
+    </table>
+    <br>
+    <table >
+        <h4>Scene 3</h4>
+        <p>Alpha: 0.079602 <br>
+            Beta: -0.009918</p>
+                <tbody>
+                <tr>
+                <th>
+                    Scene   
+                </th>
+                <th colspan="2">
+                    Diparity
+                </th>
+                <th colspan="2">
+                   Depth 
+                </th>
+               
+                </tr>
+            
+                <tr>
+                
+                    <td>
+                        <img src="data/part3/scene3.png" width="400px">
+                    </td>
+            
+                    <td colspan="2">
+                        <img src="data/part3/scene3_disparity.png" width="400px">
+                    </td>
+                    <td colspan="2">
+                        <img src="data/part3/scene3_depth.png" width="400px">
+                    </td>
+                        
+                </tr>
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                
+                <tr><th>Obj</th><th>Depth</th><th>apprt height</th><th>real height</th><th>Predicted Height</th></tr>
+                <tr> <td>anchor_0</td><td>0.246</td><td>82.079</td><td>16.6</td><td>20.2258</td></tr>
+                <tr> <td>anchor_1</td><td>0.196</td><td>51.0</td><td>10</td><td>10.0</td></tr>
+                <tr> <td>anchor_2</td><td>0.147</td><td>68.0</td><td>10</td><td>10.0</td></tr>
+                <tr> <td>anchor_3</td><td>0.247</td><td>120.0</td><td>28.3</td><td>29.6014</td></tr>
+            
+               
+        </tbody>
+    </table>
+       
+       
+    </body>
+</html>

@@ -12,15 +12,16 @@
 			<ul>
                 <li class="nav"><a href="https://docs.google.com/presentation/d/1VdBLTTvhxQCVEzTDENCg8JjKUsyKs2rQSJNE_7_dDXY/edit?usp=sharing" target="_blank">Part 0</a></li>
                 <li class="nav"><a href="index.html">Part 1</a></li>
-                <li class="nav"><a href="Part2.html" style="background-color: #27cece;">Part 2</a></li>
+                <li class="nav"><a href="part2.html" style="background-color: #27cece;">Part 2</a></li>
+                <li class="nav"><a href="part3.html">Part 3</a></li>
             </ul>
 		</div>
         </table>
         <h2 >CIS - Simple Experiment</h2>
         <div>
 			<ul>
-                <li class="nav"><a href="Part2.html" >Overview</a></li>
-                <li class="nav"><a href="Part2b.html" style="background-color: #33de58;">Experiment</a></li>
+                <li class="nav"><a href="part2.html" >Overview</a></li>
+                <li class="nav"><a href="part2b.html" style="background-color: #33de58;">Experiment</a></li>
                
                 
    
@@ -64,6 +65,96 @@
                 </td>
             </tr>
 
+        </table>
+
+        <br>
+        <h2>Experiment 0</h2>
+        <table>
+            <tr>
+                <th>
+                    Input
+                </th>
+                <td>
+                    <img src="data/Part2/img_orig.jpg" style="width: 20em;">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Skeleton
+                </th>
+                <td>
+                    <img src="data/Part2/skeleton.jpg" style="width: 20em;">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Feet location
+                </th>
+                <td>
+                    <img src="data/Part2/feet_location.jpg" style="width: 20em;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Depthmap at the feet_location = 166px<br>
+                    Height in px = 563.98<br>
+                    theta: avg_human_height/depth_at_feet <br> --> (1.75/166)*1000 ===>10.542
+                </td>
+                <td>
+                    <img src="data/Part2/depth_map.jpg" style="width: 20em;">
+                </td>
+            </tr>
+          
+        </table>
+
+        <br>
+        <h2>Experiment 1</h2>
+        <table>
+            <tr>
+                <th>
+                   Loss MSE = 113.37
+                </th>
+                <td>
+                    <img src="data/Part2/depth_map.jpg" style="width: 20em;">
+                    <p>GT</p>
+                </td>
+                <td>
+                    <img src="data/Part2/pred_depth.jpg" style="width: 20em;">
+                    <p>Pred</p>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Optimized with theta, Loss MSE = 2161804.96<br>
+                    <p>?</p>
+                </th>
+                <td>
+                    <img src="data/Part2/optimized__gt_depth.jpg" style="width: 20em;">
+                    <p>Optimized GT</p>
+                </td>
+                <td>
+                    <img src="data/Part2/optimized__pred_depth.jpg" style="width: 20em;">
+                    <p>Optimized Pred</p>
+                </td>
+            </tr>
+    </table>
+            <br>
+        <h2>Experiment 2</h2>
+        <table>
+            <tr>
+                <th>
+                   Person at the left end
+                </th>
+                <td>
+                    <img src="data/Part2/img_person_left.jpg" style="width: 20em;">
+                    <p> with GT Depth Map height =2.013m <br>
+                        with predicted depth 0.99m</p>
+                    
+                </td>
+               
+            </tr>
+           
+          
         </table>
     </body>
 </html>
